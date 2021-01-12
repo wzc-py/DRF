@@ -6,7 +6,7 @@
                 <el-aside width="200px">
                     <router-link to="/user">用户管理</router-link>
                     <br>
-                    <router-link to="/addr">地址管理</router-link>
+                    <router-link to="/login">登录</router-link>
                     <br>
                     <router-link to="/note">留言板</router-link>
                 </el-aside>

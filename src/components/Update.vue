@@ -29,7 +29,7 @@
 
 <script>
 export default {
-    name: "Add_emp",
+    name: "Update",
     data() {
         return {
             form: {
@@ -46,7 +46,7 @@ export default {
         onSubmit() {
             this.$axios({
                 url:"http://127.0.0.1:8000/lastapp/book/",
-                method:"post",
+                method:"patch",
                 data:{
                     book_name:this.form.book_name,
                     price:this.form.price,
@@ -54,7 +54,7 @@ export default {
                     pic:this.form.pic,
                     publish:this.form.publish,
                     create_time:this.form.create_time
-                }
+                },
             }).then(response=>{
                 this.$router.push("/user")
             }).catch(error=>{
